@@ -1,0 +1,328 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 33pt;
+}
+
+h2 {
+  font-size: 25pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+nav {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(20, 18, 109);
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  display: inline;
+  font-size: 25pt;
+}
+
+#bigbackground {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-image: url(../pictures/backgroundimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bigbackground .blackout {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bigbackground .blackout #welcometext {
+  color: white;
+}
+
+#aboutme {
+  width: 100%;
+  background-color: #F1F7F1;
+}
+#aboutme .sectionstart {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#aboutme .sectionstart h2 {
+  text-align: center;
+}
+#aboutme .sectionstart hr {
+  width: 100px;
+  height: 4px;
+  margin: 12px auto;
+  background-color: #18d838;
+}
+#aboutme .flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-bottom: 40px;
+}
+#aboutme .flexcontainer .aboutinfo {
+  height: 350px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#aboutme .flexcontainer .aboutinfo p {
+  font-size: 15pt;
+}
+#aboutme .flexcontainer .aboutinfo p span {
+  font-size: 15pt;
+  font-weight: bold;
+}
+#aboutme .flexcontainer #mypicture {
+  width: 17%;
+}
+#aboutme .flexcontainer #mypicture img {
+  height: 350px;
+  width: 100%;
+}
+
+#skills {
+  width: 100%;
+  background-color: #090A09;
+}
+#skills .sectionstart {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#skills .sectionstart h2 {
+  text-align: center;
+  color: #F1F7F1;
+}
+#skills .sectionstart hr {
+  width: 100px;
+  height: 4px;
+  margin: 12px auto;
+  background-color: #18d838;
+}
+#skills .flexcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-bottom: 40px;
+}
+#skills .flexcontainer .skillcont {
+  height: 390px;
+  width: 20%;
+  background-color: #202120;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#skills .flexcontainer .skillcont i {
+  font-size: 80px;
+  color: #18d838;
+}
+#skills .flexcontainer .skillcont p {
+  font-size: 15pt;
+  text-align: center;
+  color: #F1F7F1;
+}
+
+#projects {
+  width: 100%;
+  background-color: #F1F7F1;
+}
+#projects .sectionstart {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#projects .sectionstart h2 {
+  text-align: center;
+  color: black;
+}
+#projects .sectionstart hr {
+  width: 100px;
+  height: 4px;
+  margin: 12px auto;
+  background-color: #18d838;
+}
+#projects .flexcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-bottom: 40px;
+}
+#projects .flexcontainer .projectdiv {
+  width: 41%;
+  height: 400px;
+}
+#projects .flexcontainer .projectdiv img {
+  height: 400px;
+}
+#projects .flexcontainer .projectdiv p {
+  font-size: 15pt;
+  text-align: center;
+}
+
+#services {
+  width: 100%;
+  background-color: rgb(8, 7, 48);
+}
+#services .sectionstart {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#services .sectionstart h2 {
+  text-align: center;
+  color: black;
+}
+#services .sectionstart hr {
+  width: 100px;
+  height: 4px;
+  margin: 12px auto;
+  background-color: #18d838;
+}
+#services .flexcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-bottom: 40px;
+}
+#services .flexcontainer .serv {
+  width: 20%;
+  height: 200px;
+  text-align: center;
+}
+#services .flexcontainer .serv i {
+  font-size: 40px;
+  padding: 20px 0px;
+  color: #18d838;
+}
+#services .flexcontainer .serv h3 {
+  padding-bottom: 10px;
+  color: white;
+}
+#services .flexcontainer .serv p {
+  font-size: 15pt;
+  color: white;
+}
+
+#last {
+  width: 100%;
+  background-color: white;
+}
+#last .sectionstart {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#last .sectionstart h2 {
+  text-align: center;
+  color: black;
+}
+#last .sectionstart hr {
+  width: 100px;
+  height: 4px;
+  margin: 12px auto;
+  background-color: #18d838;
+}
+#last .flexcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  padding-bottom: 40px;
+}
+#last .flexcontainer #form {
+  width: 35%;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px;
+  height: 350px;
+}
+#last .flexcontainer #form #container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F0FAF9;
+  height: 350px;
+}
+#last .flexcontainer #form input {
+  border: none;
+  height: 15%;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+  color: #000;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+#last .flexcontainer #form label, #last .flexcontainer #form b {
+  color: #000;
+  float: left;
+  background-color: rgba(248, 252, 236, 0);
+}
+#last .flexcontainer #form #button01 {
+  width: 100%;
+  color: #000;
+  transition: 0.5s;
+}
+#last .flexcontainer #form #button01:hover {
+  transform: scale(1.04);
+  color: #fff;
+  background-color: #000;
+}
+#last .flexcontainer #adinfo {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-direction: column;
+}
+#last .flexcontainer #adinfo .two {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+#last .flexcontainer #adinfo .two i {
+  font-size: 20pt;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: grey;
+  height: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  align-items: center;
+}
+footer .icons {
+  display: flex;
+  justify-content: space-between;
+}
+footer .icons ul {
+  height: 100%;
+}
+footer .icons ul li {
+  display: inline;
+}
+footer .icons ul li a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
